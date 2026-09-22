@@ -1,12 +1,12 @@
 # Taxi-data-visualization-python
- 
+
 1. Project Overview
    
-This project analyses NYC taxi trip data from the Seaborn “taxis” dataset, which holds 6,433 trips recorded in March 2019.The notebook loads the 
+This project analyses NYC taxi trip data from the Seaborn “taxis” dataset, which holds 6,433 trips recorded in March 2019.The notebook
 
-data, handles the missing values, and builds ten visualizations with Pandas, Matplotlib and Seaborn to look at fare, distance, payment method and
+loads the data, handles the missing values, and builds ten visualizations with Pandas, Matplotlib and Seaborn to look at fare, distance,
 
-pickup location.
+payment method and pickup location.
 
 2. Files in this Folder
    
@@ -26,7 +26,7 @@ One-page summary of the findings Readme document Python DA Assignment 2 -Data Vi
 
 all of these libraries.
 
-5. How to Run the Notebook
+4. How to Run the Notebook
    
 Google Colab
 
@@ -36,7 +36,7 @@ Google Colab
 
 3.Choose Runtime > Run all.
 
-Jupyter Notebook
+5.Jupyter Notebook
 
 1.Install the libraries: pip install pandas matplotlib seaborn notebook
 
@@ -46,9 +46,9 @@ Jupyter Notebook
 
 The cells are meant to be run in order from top to bottom. No extra files need to be uploaded.
 
-7. Notebook Structure
-   
-8.Section	Content
+6. Notebook Structure
+
+7.Section	Content
 
 1. Load the dataset	Imports the libraries and loads the taxis dataset
    
@@ -70,7 +70,7 @@ value pickup_zone, pickup_borough	26 each	Rows removed, since the pickup locatio
 
 After cleaning, 6,407 of the 6,433 rows remain and no missing values are left.
 
-9. Visualizations
+8. Visualizations
     
 Plot	Library	What it shows Line chart	Matplotlib	Fare against pickup time, with a daily average line on top Bar chart	Pandas	Total fare for 
 
@@ -82,7 +82,7 @@ coloured by pickup borough Heatmap	Seaborn	Correlation of distance, fare, tip, t
 
 coloured by pickup zone Violin plot	Seaborn	Fare distribution for each payment method
 
-11. Notes
+9. Notes
     
 •The dataset has about 190 pickup zones, which would make the pair plot legend unreadable, so the pair plot uses the 5 busiest zones.
 
