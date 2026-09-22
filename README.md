@@ -12,13 +12,19 @@ Taxi_Data_Visualization.ipynb	Main notebook with the code, all plots and a short
 One-page summary of the findings Readme document Python DA Assignment 2 -Data Visualization-Taxi_Data_Visualization.docx	This file
 
 3. Requirements
+
 •Python 3
+
 •pandas, matplotlib and seaborn (seaborn 0.13 or later)
+
 .An internet connection, because sns.load_dataset("taxis") downloads the data on first run Google Colab already includes 
+
 all of these libraries.
 
-4. How to Run the Notebook
+5. How to Run the Notebook
+
 Google Colab
+
 1.Open Google Colab and choose File > Upload notebook.
 
 2.Select Taxi_Data_Visualization.ipynb.
