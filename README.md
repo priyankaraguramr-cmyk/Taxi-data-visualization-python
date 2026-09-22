@@ -1,41 +1,41 @@
 # Taxi-data-visualization-python
 1. Project Overview
    
- This project analyses NYC taxi trip data from the Seaborn “taxis” dataset, which holds 6,433 trips recorded in March 2019.The notebook
+  This project analyses NYC taxi trip data from the Seaborn “taxis” dataset, which holds 6,433 trips recorded in March 2019.The notebook
 
- loads the data, handles the missing values, and builds ten visualizations with Pandas, Matplotlib and Seaborn to look at fare, distance,
+  loads the data, handles the missing values, and builds ten visualizations with Pandas, Matplotlib and Seaborn to look at fare, distance,
 
- payment method and pickup location.
+  payment method and pickup location.
 
 2. Files in this Folder
    
- File	Description
+  File	Description
 
- Taxi_Data_Visualization.ipynb	Main notebook with the code, all plots and a short observation under each plot Taxi_Analysis_Summary.docx	
+  Taxi_Data_Visualization.ipynb	Main notebook with the code, all plots and a short observation under each plot Taxi_Analysis_Summary.docx	
 
- One-page summary of the findings Readme document Python DA Assignment 2 -Data Visualization-Taxi_Data_Visualization.docx	This file
+  One-page summary of the findings Readme document Python DA Assignment 2 -Data Visualization-Taxi_Data_Visualization.docx	This file
 
 3. Requirements
 
- •Python 3
+  •Python 3
 
- •pandas, matplotlib and seaborn (seaborn 0.13 or later)
+  •pandas, matplotlib and seaborn (seaborn 0.13 or later)
 
- •An internet connection, because sns.load_dataset("taxis") downloads the data on first run Google Colab already includes 
+  •An internet connection, because sns.load_dataset("taxis") downloads the data on first run Google Colab already includes 
 
- all of these libraries.
+  all of these libraries.
 
 4. How to Run the Notebook
    
- Google Colab
+  Google Colab
 
- 1.Open Google Colab and choose File > Upload notebook.
+  1.Open Google Colab and choose File > Upload notebook.
 
- 2.Select Taxi_Data_Visualization.ipynb.
+  2.Select Taxi_Data_Visualization.ipynb.
 
- 3.Choose Runtime > Run all.
+  3.Choose Runtime > Run all.
 
- 4.Jupyter Notebook
+5.Jupyter Notebook
 
  1.Install the libraries: pip install pandas matplotlib seaborn notebook
 
