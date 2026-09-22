@@ -2,21 +2,19 @@
  
 1. Project Overview
    
-This project analyses NYC taxi trip data from the Seaborn “taxis” dataset, which holds 6,433 trips recorded in March 2019.
+This project analyses NYC taxi trip data from the Seaborn “taxis” dataset, which holds 6,433 trips recorded in March 2019.The notebook loads the 
 
-The notebook loads the data, handles the missing values, and builds ten visualizations with Pandas, Matplotlib and Seaborn
+data, handles the missing values, and builds ten visualizations with Pandas, Matplotlib and Seaborn to look at fare, distance, payment method and
 
-to look at fare, distance, payment method and pickup location.
+pickup location.
 
 2. Files in this Folder
    
 File	Description
 
-Taxi_Data_Visualization.ipynb	Main notebook with the code, all plots and a short observation under 
+Taxi_Data_Visualization.ipynb	Main notebook with the code, all plots and a short observation under each plot Taxi_Analysis_Summary.docx	
 
-each plot Taxi_Analysis_Summary.docx	One-page summary of the findings Readme document Python DA Assignment 2 -
-
-Data Visualization-Taxi_Data_Visualization.docx	This file
+One-page summary of the findings Readme document Python DA Assignment 2 -Data Visualization-Taxi_Data_Visualization.docx	This file
 
 3. Requirements
 
@@ -24,9 +22,9 @@ Data Visualization-Taxi_Data_Visualization.docx	This file
 
 •pandas, matplotlib and seaborn (seaborn 0.13 or later)
 
-•An internet connection, because sns.load_dataset("taxis") downloads the data on first run
+•An internet connection, because sns.load_dataset("taxis") downloads the data on first run Google Colab already includes 
 
-Google Colab already includes all of these libraries.
+all of these libraries.
 
 5. How to Run the Notebook
    
@@ -66,44 +64,30 @@ The cells are meant to be run in order from top to bottom. No extra files need t
    
 7.Missing values were found only in categorical columns.
 
-Column	Missing	Treatment payment	44	Filled with the most frequent value
+Column	Missing	Treatment payment	44	Filled with the most frequent value dropoff_zone, dropoff_borough	45 each	Filled with the most frequent
 
-dropoff_zone, dropoff_borough	45 each	Filled with the most frequent value
-
-pickup_zone, pickup_borough	26 each	Rows removed, since the pickup location 
-
-is central to the analysis and cannot be reasonably guessed
+value pickup_zone, pickup_borough	26 each	Rows removed, since the pickup location is central to the analysis and cannot be reasonably guessed
 
 After cleaning, 6,407 of the 6,433 rows remain and no missing values are left.
 
 9. Visualizations
     
-Plot	Library	What it shows Line chart	Matplotlib	Fare against pickup time, with a 
+Plot	Library	What it shows Line chart	Matplotlib	Fare against pickup time, with a daily average line on top Bar chart	Pandas	Total fare for 
 
-daily average line on top Bar chart	Pandas	Total fare for each pickup borough
+each pickup borough Pie chart	Pandas	Share of trips by payment method Histogram	Matplotlib	Distribution of trip distance (60 bins) Box plot
 
-Pie chart	Pandas	Share of trips by payment method Histogram	Matplotlib	Distribution 
+Pandas	Tip amount for each pickup borough Count plot	Seaborn	Number of trips in each pickup borough Scatter plot	Seaborn	Distance against fare,
 
-of trip distance (60 bins) Box plot	Pandas	Tip amount for each pickup borough Count plot	
+coloured by pickup borough Heatmap	Seaborn	Correlation of distance, fare, tip, tolls and total Pair plot	Seaborn	Distance, fare, tip and total,
 
-Seaborn	Number of trips in each pickup borough Scatter plot	Seaborn	Distance against fare,
-
-coloured by pickup borough Heatmap	Seaborn	Correlation of distance, fare, tip, tolls and total
-
-Pair plot	Seaborn	Distance, fare, tip and total, coloured by pickup zone
-
-Violin plot	Seaborn	Fare distribution for each payment method
+coloured by pickup zone Violin plot	Seaborn	Fare distribution for each payment method
 
 11. Notes
     
-•The dataset has about 190 pickup zones, which would make the pair plot legend unreadable, 
-
-so the pair plot uses the 5 busiest zones.
+•The dataset has about 190 pickup zones, which would make the pair plot legend unreadable, so the pair plot uses the 5 busiest zones.
 
 •The daily average line in the line chart leaves out 28 February, which has only one trip.
 
-•Cash trips record a tip of zero, so tip comparisons between boroughs mostly reflect the mix of
-
- cash and card payments.
+•Cash trips record a tip of zero, so tip comparisons between boroughs mostly reflect the mix of cash and card payments.
 
 •The Bronx has only 99 trips, so results for that borough should be read with care.
