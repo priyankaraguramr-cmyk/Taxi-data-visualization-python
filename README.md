@@ -1,5 +1,4 @@
 # Taxi-data-visualization-python
-
 1. Project Overview
    
 This project analyses NYC taxi trip data from the Seaborn “taxis” dataset, which holds 6,433 trips recorded in March 2019.The notebook
